@@ -35,6 +35,8 @@ document.getElementById('w-change-btn').addEventListener('click', (e) => {
         state.value = '';
     } else {
         locationNotFound();
+
+
     }
 
     e.preventDefault();
@@ -51,6 +53,13 @@ function locationNotFound() {
     setTimeout(() => {
         div.remove()
     }, 5000);
+
+    setTimeout(() => {
+        window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })},100);
 
     city.value = '';
     state.value = '';
@@ -166,7 +175,7 @@ function getMultipleWeather() {
             });
 
             cityList.innerHTML = output;
-            
+
 
         })
         .catch(err => console.log(err));

@@ -23,7 +23,7 @@ class Weather {
     }   
 
     async getMultipleWeather(){
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/group?id=5391959,5128581,2643743,3173435,2950159,4155751,5368361&appid=${this.apiKey}`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/group?id=5391959,5128581,2643743,3173435,2950159,4155751,5368361&appid=${this.apiKey}`);
     
         const responseData = await response.json();
     
@@ -31,7 +31,7 @@ class Weather {
     }
 
     async getWeatherById(id){
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/group?id=${id}&appid=${this.apiKey}`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/group?id=${id}&appid=${this.apiKey}`);
     
         const responseData = await response.json();
     

@@ -2,8 +2,8 @@ class Storage {
     constructor() {
         this.city;
         this.state;
-        this.defaultCity = 'San Francisco';
-        this.defaultState = 'US';
+        this.defaultCity = 'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch';
+        this.defaultState = 'Wales';
     }
 
     getLocationData() {
