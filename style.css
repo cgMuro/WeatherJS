@@ -1,0 +1,95 @@
+body {
+    height: 100%;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.col-md-6 {
+    border: 5px solid white;
+}
+
+.list-group-item {
+    background: transparent !important;
+    border: none;
+}
+
+#w-temp-container {
+    width: fit-content;
+}
+
+#w-temp {
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.city-list-item {
+    transition: all 0.5s ease-in;
+    border: 1px solid rgb(58, 57, 57);
+    cursor: pointer;
+}
+
+
+
+
+/* MODAL */
+
+.modal-content {
+    background-color: rgb(241, 234, 228);
+}
+
+#locModalLabel{
+    color: rgb(48, 62, 143);
+    font-weight: bold;
+}
+
+.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(48, 62, 143);
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(47, 150, 163);
+    border-top: 0.5px solid rgb(47, 150, 163);
+    box-shadow: inset 0 -2px 0 rgb(47, 150, 163);
+    color: rgb(58, 57, 57);
+}
+
+.form-control:valid + label,
+.form-control:hover + label,
+.form-control:focus + label {
+    bottom: 4rem;
+    left: 0.2rem;
+    color: rgb(47, 150, 163);
+    font-weight: bold;
+    transform: scale(0.8);
+}
+label {
+    position: relative;
+    bottom: 2rem;
+    left: 0.74rem;
+    font-size: 15px;
+    transition: all 0.5s linear;
+    color: rgb(48, 62, 143);
+}
+
+@media (min-width: 1200px){
+    .city-list-item:hover {
+        transform: scale(1.1);
+        background-color: rgba(30, 200, 206, 0.3);
+    }
+    
+    .city-list-item:hover > * {
+        color: rgb(0, 0, 0)!important;
+        font-weight: bolder;
+    }
+    #w-temp:hover {
+        transform: scale(1.2);
+    }
+}
